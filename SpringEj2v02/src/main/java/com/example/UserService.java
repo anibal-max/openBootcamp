@@ -7,11 +7,10 @@ import org.springframework.stereotype.Component;
 public class UserService {
 	
 	
-	NotificationService notificationService;
+	NotificationService notificationService = new NotificationService();
 	
-	public UserService(NotificationService notificationService) {
-		System.out.println("Constructor User Service");
-		this.notificationService = notificationService;
+	public UserService() {
+		System.out.println("Constructor User Service");		
 	}
 
 	
